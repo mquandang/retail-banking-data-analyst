@@ -33,7 +33,7 @@
     const provider = new GoogleAuthProvider();
     provider.setCustomParameters({ prompt: "select_account" });
 
-    // Popup first. If the browser blocks it, or the environment cannot run popups, fall back to redirect. Test.
+    // Popup first. If the browser blocks it, or the environment cannot run popups, fall back to redirect.
     async function signIn() {
       try {
         await signInWithPopup(auth, provider);
